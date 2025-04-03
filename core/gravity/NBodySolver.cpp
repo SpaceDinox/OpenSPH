@@ -1,17 +1,3 @@
-#include "gravity/NBodySolver.h"
-#include "gravity/BruteForceGravity.h"
-#include "gravity/Collision.h"
-#include "io/Logger.h"
-#include "objects/finders/NeighborFinder.h"
-#include "quantities/Quantity.h"
-#include "sph/Diagnostics.h"
-#include "system/Factory.h"
-#include "system/Settings.h"
-#include "system/Statistics.h"
-#include "system/Timer.h"
-#include <map>
-#include <set>
-
 NAMESPACE_SPH_BEGIN
 
 HardSphereSolver::HardSphereSolver(IScheduler& scheduler, const RunSettings& settings)
